@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViajeiD_.View.ViagensView"
+             Title="ViagensView"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BorderColor="Black" CornerRadius="0" HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <!-- Defina suas linhas conforme necessário -->
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Adicione os elementos do Grid aqui -->
+                    <BoxView Grid.Row="0" Color="White" HeightRequest="40" />
+                    <Label Grid.Row="0" Text="Minhas Viagens" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Grotesque"/>
+                </Grid>
+            </Frame>
+            <Grid>
+                <BoxView Color="#009D86" HeightRequest="150" />
+                <Label Text="Adicionar Destino" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="30"
+    FontFamily="Grotesque"/>
+            </Grid>
+            <Grid>
+                <Image Source="londres.png" Aspect="AspectFill" />
+
+
+                <Label Text="Londres" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="30"
+    FontFamily="Grotesque"/>
+            </Grid>
+            <Grid>
+                <Image Source="rj.png" Aspect="AspectFill" />
+
+
+                <Label Text="Rio de Janeiro" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="30"
+    FontFamily="Grotesque"/>
+            </Grid>
+            <Grid>
+                <Image Source="orlando.png" Aspect="AspectFill" />
+
+
+                <Label Text="Orlando" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="30"
+    FontFamily="Grotesque"/>
+            </Grid>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

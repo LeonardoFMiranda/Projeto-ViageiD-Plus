@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViajeiD_.View.EditaUsuarioView"
+             Title="EditaUsuarioPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout Spacing="5"
+    VerticalOptions="CenterAndExpand"
+    Margin="16"
+    Padding="16">
+
+
+            <!-- Front da pagina de cadastro-->
+
+            <Image Source="viajeui.png"
+        HeightRequest="200"
+        WidthRequest="360"
+        HorizontalOptions="Center"
+        />
+
+
+
+            <Label 
+        x:Name="lblCadastre"
+        Text="Cadastre-se"
+        FontSize="30"
+        FontFamily="Grotesque"
+        HorizontalOptions="Center"/>
+
+
+            <Label
+     x:Name="lblNome"
+     Text="Nome"
+     FontFamily="Grotesque"
+     FontSize="20"/>
+
+
+            <Border StrokeThickness="0"
+            Stroke="White">
+                <Entry 
+        Placeholder="Digite seu nome" 
+        x:Name="txtNome"
+        Text="{Binding Nome}"/>
+            </Border>
+
+            <Label
+         x:Name="lblNomeUsuario"
+         Text="Nome de Usuario"
+         FontFamily="Grotesque"
+         FontSize="20"/>
+
+
+            <Border StrokeThickness="0"
+            Stroke="White">
+                <Entry 
+        Placeholder="Digite seu nome de usuario" 
+        x:Name="txtNomeUsuario"
+        Text="{Binding NomeUsuario}"/>
+            </Border>
+
+            <Label
+        x:Name="lblEmail"
+        Text="Email"
+        
+        FontFamily="Grotesque"
+        FontSize="20"/>
+
+            <Border StrokeThickness="0"
+           >
+                <Entry 
+        Placeholder="Digite seu e-mail" 
+        x:Name="txtEmail"
+        Text="{Binding Email}"/>
+
+            </Border>
+
+            <Label 
+        x:Name="lblSenha"
+        Text="Senha"
+        FontFamily="Grotesque"
+        FontSize="20"/>
+
+            <Entry 
+        Placeholder="Digite sua senha" 
+        Text="{Binding Senha}"
+        IsPassword="True"
+        x:Name="txtSenha"/>
+
+            <Button 
+        Text="Cadastrar" 
+        x:Name="btnCadastrar"
+        Clicked="btnCadastrar_Clicked"
+        Margin="10"
+        BackgroundColor="#009D86"
+                CornerRadius="0"/>
+
+
+            <Grid Margin="-60,0,0,0" >
+
+                <Label Text="Já possui cadastro?"
+                    HorizontalOptions="Center"
+                    FontSize="12"
+                     />
+
+                <Button 
+                 x:Name="btnLogin"
+                 Clicked="btnLogin_Clicked"
+                 Text="Clique aqui"
+                 FontSize="12"
+     
+                 HorizontalOptions="EndAndExpand"
+                 VerticalOptions="Start"
+                 TextColor="#61BBCF"
+                 Background="Transparent"
+                 Margin="-12,-13,72,0"
+                 Padding="0"
+     
+    
+                />
+            </Grid>
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

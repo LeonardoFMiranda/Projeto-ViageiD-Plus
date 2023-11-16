@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViajeiD_.View.LoginUsuarioView"
+             Title="LoginUsuarioView"
+             NavigationPage.HasNavigationBar="False">
+   
+    <StackLayout Spacing="5"
+       
+        VerticalOptions="CenterAndExpand"
+        Margin="16"
+        Padding="16"
+        >
+        <Image Source="viajeui.png"
+               HeightRequest="200"
+               WidthRequest="360"
+               HorizontalOptions="Center"/>
+        <!-- Front da página de login-->
+        <Label 
+            FontSize="30"
+            FontFamily="Grotesque"
+            Text="Login"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label
+            FontFamily="Grotesque"
+            FontSize="20"
+            x:Name="lblEmail"
+            Text="E-mail"/>
+
+        <Border Stroke="White"
+                StrokeThickness="0">
+            <Entry 
+            Placeholder="Digite seu e-mail" 
+            x:Name="txtEmail"/>
+        </Border>
+
+        <Label 
+            x:Name="lblSenha"
+            FontSize="20"
+            Text="Senha"
+            FontFamily="Grotesque"/>
+       
+        <Entry 
+            Placeholder="Digite sua senha" 
+            x:Name="txtSenha"
+            IsPassword="True"/>
+
+        <Button 
+            Text="Entrar" 
+            x:Name="btnEntrar" 
+            Clicked="btnEntrar_Clicked"
+            Margin="10"
+            Background="#009D86"
+            CornerRadius="0"/>
+
+        <Grid Margin="-60,0,0,0" >
+
+            <Label Text="Não possui cadastro?"
+                HorizontalOptions="Center"
+                FontSize="12"
+                 />
+
+            <Button 
+                x:Name="btnRegistrar"
+                Clicked="btnRegistrar_Clicked"
+                Text="Cadastre-se"
+                FontSize="12"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Start"
+                TextColor="#61BBCF"
+                Background="Transparent"
+                Margin="-12,-13,62,0"
+                Padding="0"
+                CornerRadius="0" 
+                />
+        </Grid>
+
+
+
+
+
+
+    </StackLayout>
+</ContentPage>
